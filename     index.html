@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MaklerAI – KI für Immobilienmakler</title>
+<style>
+:root{--navy:#102a43;--blue:#2563eb;--light:#f5f8fc;--text:#17202a;--muted:#64748b;--border:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.5}
+.container{max-width:1100px;margin:auto;padding:0 22px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-weight:800;font-size:23px;color:var(--navy)}.logo span{color:var(--blue)}
+nav a{color:#334155;text-decoration:none;margin-left:22px;font-size:14px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:13px 19px;border-radius:10px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
+.hero{background:linear-gradient(135deg,#f5f8fc,#eef5ff);padding-bottom:70px}
+.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center;padding:65px 0}
+.badge{display:inline-block;background:#e7efff;color:#1d4ed8;padding:7px 11px;border-radius:99px;font-size:12px;font-weight:700}
+h1{font-size:48px;line-height:1.08;margin:18px 0 17px;color:var(--navy)}
+.hero p{font-size:18px;color:var(--muted);max-width:600px}
+.card{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:0 15px 45px #102a4314}
+.chat{min-height:310px}.chat h3{margin-top:0}.msg{padding:11px 13px;border-radius:14px;margin:10px 0;font-size:14px;max-width:88%}.bot{background:#eef2f6}.user{background:var(--navy);color:#fff;margin-left:auto}.chips{display:grid;gap:8px;margin-top:15px}.chips button{padding:10px;border:1px solid #cbd5e1;background:white;border-radius:9px;color:var(--navy);cursor:pointer}
+section{padding:70px 0}.center{text-align:center}h2{font-size:34px;color:var(--navy);margin:0 0 12px}.sub{color:var(--muted);max-width:650px;margin:0 auto 35px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature,.price{border:1px solid var(--border);border-radius:16px;padding:23px}.feature h3,.price h3{margin-top:0;color:var(--navy)}.feature p,.price li{color:var(--muted);font-size:14px}
+.price strong{font-size:31px;color:var(--navy)}.price ul{padding-left:19px}.featured{border:2px solid var(--blue)}
+.cta{background:var(--navy);color:white;text-align:center;padding:60px 20px}.cta h2{color:white}.cta p{color:#dbe5ef}
+footer{padding:25px 0;color:#718096;font-size:12px;text-align:center}
+@media(max-width:760px){nav a{display:none}.heroGrid,.grid3{grid-template-columns:1fr}h1{font-size:38px}.heroGrid{padding:45px 0}.grid3{gap:14px}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="container">
+<nav><div class="logo">Makler<span>AI</span></div><div><a href="#leistungen">Leistungen</a><a href="#preise">Preise</a><a class="btn" href="#kontakt">Demo anfragen</a></div></nav>
+<div class="heroGrid">
+<div>
+<span class="badge">KI-ASSISTENT FÜR IMMOBILIENMAKLER</span>
+<h1>Mehr Anfragen bearbeiten. Weniger Zeit im Chat verbringen.</h1>
+<p>MaklerAI beantwortet häufige Interessentenfragen, nimmt Kontaktdaten auf und bereitet Besichtigungsanfragen vor – rund um die Uhr.</p>
+<a class="btn" href="#demo">Demo testen</a>
+</div>
+<div class="card chat" id="demo">
+<h3>MaklerAI Demo</h3>
+<div class="msg bot">👋 Hallo! Ich bin der digitale Assistent. Wie kann ich dir helfen?</div>
+<div class="chips">
+<button onclick="demo('Ich möchte eine Besichtigung anfragen.')">📅 Besichtigung anfragen</button>
+<button onclick="demo('Ist die Immobilie noch verfügbar?')">🏠 Verfügbarkeit</button>
+<button onclick="demo('Wie hoch ist die Miete?')">💰 Mietpreis</button>
+</div>
+</div>
+</div></div></div>
+
+<section id="leistungen"><div class="container">
+<div class="center"><h2>Was MaklerAI übernimmt</h2><p class="sub">Ein digitaler Assistent für wiederkehrende Anfragen und die erste Kontaktaufnahme.</p></div>
+<div class="grid3">
+<div class="feature"><h3>💬 Fragen beantworten</h3><p>Der Assistent beantwortet häufige Fragen auf Basis der Informationen, die der Makler bereitstellt.</p></div>
+<div class="feature"><h3>📅 Anfragen aufnehmen</h3><p>Interessenten können ihren Namen, Kontakt und Terminwunsch hinterlassen.</p></div>
+<div class="feature"><h3>🌙 24/7 erreichbar</h3><p>Auch außerhalb der Bürozeiten können Interessenten ihre Anfrage abgeben.</p></div>
+</div></div></section>
+
+<section id="preise" style="background:var(--light)"><div class="container">
+<div class="center"><h2>Beispiel-Pakete</h2><p class="sub">Die Preise sind als Startangebot gedacht und können später an den tatsächlichen Leistungsumfang angepasst werden.</p></div>
+<div class="grid3">
+<div class="price"><h3>Starter</h3><strong>799 €</strong><p>Einrichtung</p><ul><li>KI-Assistent</li><li>FAQ-Einrichtung</li><li>Basis-Anpassung</li><li>monatliche Betreuung ab 149 €</li></ul></div>
+<div class="price featured"><h3>Pro</h3><strong>1.499 €</strong><p>Einrichtung</p><ul><li>Alles aus Starter</li><li>Vorqualifizierung</li><li>Besichtigungsanfragen</li><li>monatliche Betreuung ab 299 €</li></ul></div>
+<div class="price"><h3>Premium</h3><strong>2.499 €</strong><p>Einrichtung</p><ul><li>Individuelle Prozesse</li><li>erweiterte Automatisierung</li><li>persönliche Anpassung</li><li>monatliche Betreuung ab 499 €</li></ul></div>
+</div></div></section>
+
+<section id="kontakt"><div class="container"><div class="card center">
+<h2>Interesse an einer Demo?</h2><p class="sub">Die Demo kann individuell auf Ihr Maklerbüro und Ihre Immobilien angepasst werden.</p>
+<a class="btn" href="mailto:DEINE-EMAIL@BEISPIEL.DE?subject=Interesse%20an%20MaklerAI">Demo anfragen</a>
+<p style="font-size:11px;color:#94a3b8;margin-bottom:0">Vor Veröffentlichung bitte E-Mail-Adresse, Impressum, Datenschutz und tatsächliche Leistungs-/Preisangaben ergänzen.</p>
+</div></div></section>
+
+<div class="cta"><h2>MaklerAI</h2><p>Mehr automatisieren. Mehr Zeit für Kunden.</p></div>
+<footer>© 2026 MaklerAI · Demo-Version</footer>
+
+<script>
+function demo(text){
+ const chat=document.querySelector('.chat');
+ const old=document.querySelector('.chips'); if(old) old.remove();
+ let u=document.createElement('div');u.className='msg user';u.textContent=text;chat.appendChild(u);
+ let b=document.createElement('div');b.className='msg bot';
+ if(text.includes('Besichtigung')) b.textContent='Gerne! Bitte nenne mir deinen Namen, deine Telefonnummer oder E-Mail-Adresse und deinen gewünschten Termin. Die Anfrage kann anschließend an das Maklerbüro weitergegeben werden.';
+ else if(text.includes('Miete')) b.textContent='Die Demo-Immobilie kostet 950 € Kaltmiete monatlich. Weitere Kosten sollten immer anhand der aktuellen Objektunterlagen geprüft werden.';
+ else b.textContent='Nach den hinterlegten Demo-Daten ist die Immobilie aktuell verfügbar. Ich kann auf Wunsch direkt eine Besichtigungsanfrage aufnehmen.';
+ chat.appendChild(b);
+}
+</script>
+</body></html>
